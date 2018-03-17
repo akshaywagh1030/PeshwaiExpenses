@@ -1,1 +1,7 @@
 Welcome to PeshwaiExpense
+members:
+amit,
+akshay,
+aniket,
+vinita,
+bhagyashri
