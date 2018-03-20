@@ -4,17 +4,16 @@
 .table-cards {
     border-collapse: separate;
     -webkit-border-horizontal-spacing: 0px;
--webkit-border-vertical-spacing: 10px;
+  -webkit-border-vertical-spacing: 10px;
     margin-bottom: -20px;
 }
 table{
   padding: 20px;
-
 }
   tr{
     background-color:white;
     width: auto;
-
+    
   }
   tr:hover td {
   background-color: #d4f2fa;
@@ -36,7 +35,7 @@ table{
     font-size: 10px;
     height: 17px;
     line-height: 1.4;
-    margin: 1px 20px 10px 6px;
+    margin: 0 0 0 64px;
     position: relative;
     top: -2px;
     width: 66px;
