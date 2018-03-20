@@ -5,14 +5,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+     <link href="assets/css/main.css" rel="stylesheet">
+     <link href="assets/css/login_mailbutton.css" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="https://d2k5nsl2zxldvw.cloudfront.net/images/favicon_02.png">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="https://d2k5nsl2zxldvw.cloudfront.net/dist/css-gz/style.e3c2507b.css.gz" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   </head>
 
-  <body style="background-image:url(https://d2k5nsl2zxldvw.cloudfront.net/images/signInBG/bg_signIn_11.jpg)">
+  <body style="background-image:url(https://d2k5nsl2zxldvw.cloudfront.net/images/signInBG/bg_signIn_11.jpg); " >
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top">
       <div class="container-fluid">
           <a class="navbar-brand" href="index.html"></a>
@@ -55,8 +58,78 @@
        </nav>
 
 
-      
 
+
+
+
+  <div id="login" class="container" style="margin-left: 40px;">
+    <div class="logincontent" style="width:400px;height:600px">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="login well well-sm">
+
+          <form action="/users/login" style="margin-left:-15px;" class="login-form" id="UserLoginForm" method="post" accept-charset="utf-8">
+            <div style="margin-top: 140px;">
+              <div class="logo">
+                <img src="assets/image/image.png">
+              </div>
+              <table>
+
+            <tr><td>
+              <div class="inputContainer1" >
+                <input name="data[User][username]" required="required" class="textfield1" placeholder="Email address" maxlength="289" type="text" style="width: 289px;" id="UserUsername">
+                <span><img src="https://png.icons8.com/material/50/cccccc/user.png" class="inputImg1"></span>
+             </div>
+            </td></tr><tr><td></td></tr><tr><td></td></tr><td></td><tr></tr><tr><td></td></tr>
+            <!-- <div class="form-group"> -->
+              <!-- <div class="input-group"> -->
+               <tr><td>
+                <div class="inputContainer1">
+                <div>
+                <input name="data[User][password]" required="required" class="textfield1" placeholder="Password" type="password" style="width: 289px;" id="UserPassword"></input>
+                <span><img src="https://png.icons8.com/ios/50/cccccc/key-filled.png" class="inputImg1" style="width: 23px; margin-left: 4px; margin-top: 21px;"></span></div>
+                <span><a href="#" class="inputImg">Forgot?</a></span>
+
+              </div></td></tr>
+            <!-- </div> -->
+            </td></tr><tr><td></td></tr><tr><td></td></tr><td></td><tr></tr><tr><td></td></tr>
+            </td></tr><tr><td></td></tr><tr><td></td></tr><td></td><tr></tr><tr><td></td></tr>
+            <tr><td><div class="form-group">
+              <input class="btn btn-primary btn-lg btn-block "  type="submit" value="Sign in" style="width:289px;background-color:#00a5d5;height:53px;font-size: small;font-weight: bold;" >
+            </div></td></tr></table>
+            </div>
+          </form>
+
+
+
+            <div>
+
+            <p class="msg">Sign in with:</p>
+            <div class="row m-3">
+
+            <span class="col-6"><button type="button" class="btn btn-google btn-outline-secondary  " style="width:100px; ">Google</button></span>
+            <span class="col-6"><button type="button" class="btn btn-yahoo btn-outline-secondary  " style="width:100px; ">Yahoo</button></span>
+
+
+            </div>
+            <div class="row  m-3">
+
+            <span class="col-6"><button type="button" class="btn btn-SAML btn-outline-secondary  " style="width:100px; ">SAML</button></span>
+            <span class="col-6"><button type="button" class="btn btn-Intuit btn-outline-secondary  " style="width:100px; ">Intuit</button></span>
+
+
+            </div>
+              </div>
+
+
+
+
+        </div><!--/.login-->
+      </div><!--/.span12-->
+    </div><!--/.row-fluid-->
+
+ </div>  <!--/.content pane-->
+  </div><!--/.container-->
   </div>
   </body>
 </html>
