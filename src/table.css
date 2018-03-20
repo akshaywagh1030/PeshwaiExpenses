@@ -4,8 +4,9 @@
 .table-cards {
     border-collapse: separate;
     -webkit-border-horizontal-spacing: 0px;
-  -webkit-border-vertical-spacing: 10px;
+-webkit-border-vertical-spacing: 10px;
     margin-bottom: -20px;
+
 }
 table{
   padding: 20px;
@@ -13,7 +14,7 @@ table{
   tr{
     background-color:white;
     width: auto;
-    
+
   }
   tr:hover td {
   background-color: #d4f2fa;
@@ -35,7 +36,7 @@ table{
     font-size: 10px;
     height: 17px;
     line-height: 1.4;
-    margin: 0 0 0 64px;
+    margin: 1px 110px 10px -10px;
     position: relative;
     top: -2px;
     width: 66px;
@@ -62,12 +63,24 @@ table{
     padding: 0;
     text-align: center;
 }
-
+.glyphicon:before {
+ visibility: visible;
+}
+.glyphicon.glyphicon-star-empty:checked:before {
+   content: "\e006";
+}
+input[type=checkbox].glyphicon{
+    visibility: hidden;
+    color:gold;
+}
 .table-reports tr th.checkbox {
     border-left: none;
     padding: 9px 7px 9px 10px;
     position: static;
     width: 12px;
+}
+.table thead th{
+  background-color: #eee;
 }
 tr td:first-child,
 tr th:first-child {

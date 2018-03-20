@@ -4,7 +4,8 @@
 .table-cards {
     border-collapse: separate;
     -webkit-border-horizontal-spacing: 0px;
--webkit-border-vertical-spacing: 10px;
+    -webkit-border-vertical-spacing: 10px;
+    auto-margin: 0 20px;
     margin-bottom: -20px;
 }
 table{
