@@ -14,6 +14,44 @@ table{
   tr{
     background-color:white;
     width: auto;
+cachedTotal
+  }
+  tr:hover td {
+  background-color: #d4f2fa;
+      }margin-top: 17px;
+  body{
+    background-color: red;
+  }
+  .table-textSmall {
+    font-size: 12px;
+}
+.filter-state.smallState {
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    border-radius: 9px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    height: 17px;
+    line-height: 1.4;
+    margin: 1px 110px 10px -10px;.table-fixed {
+    table-layout: fixed;
+              }
+.table-cards {
+    border-collapse: separate;
+    -webkit-border-horizontal-spacing: 0px;
+-webkit-border-vertical-spacing: 10px;
+    margin-bottom: -20px;
+
+}
+table{
+  padding: 20px;
+}
+  tr{
+    background-color:white;
+    width: auto;
 
   }
   tr:hover td {
@@ -36,7 +74,7 @@ table{
     font-size: 10px;
     height: 17px;
     line-height: 1.4;
-    margin: 1px 110px 10px -10px;
+    margin: 1px 110px 10px -10pxcachedTotal;
     position: relative;
     top: -2px;
     width: 66px;
@@ -63,22 +101,83 @@ table{
     padding: 0;
     text-align: center;
 }
-.glyphicon:before {
- visibility: visible;
-}
-.glyphicon.glyphicon-star-empty:checked:before {
-   content: "\e006";
-}
-input[type=checkbox].glyphicon{
-    visibility: hidden;
-    color:gold;
-}
+
 .table-reports tr th.checkbox {
     border-left: none;
     padding: 9px 7px 9px 10px;
     position: static;
     width: 12px;
 }
+.fa{
+  /* display: table-cell; */
+  color: #fbd300;
+
+  font-size: 18px;
+  left: -21px;
+  position: relative;
+
+}
+.table-reports tr td.reportName a {
+    color: #5d6e73;
+}
+
+.table thead th{
+  background-color: #eee;
+}
+tr td:first-child,
+tr th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+tr td:last-child,
+tr th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+    position: relative;
+    top: -2px;
+    width: 66px;
+}
+.filter-state.open {
+    background: #00a5d5;
+    color: #fff;
+}
+.filter-state.closed {
+    background: #ccc;
+    color: #404040;
+}
+.filter-state:last-child {
+    margin-bottom: 0;
+}
+.filter-state {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.table-reports tr th.checkbox {
+    border-left: none;
+    padding: 9px 7px 9px 10px;
+    position: static;
+    width: 12px;
+}
+.fa{
+  /* display: table-cell; */
+color: #fbd300;
+  font-size: 18px;
+  left: -21px;
+  position: relative;
+}
+
+
 .table thead th{
   background-color: #eee;
 }
