@@ -28,6 +28,7 @@ gulp.task('default', ['vendor']);
 // Configure the browserSync task
 gulp.task('browserSync', function() {
   browserSync.init({
+    //proxy:"localhost/PeshwaiExpenses/"
     server: {
       baseDir: "./"
     }

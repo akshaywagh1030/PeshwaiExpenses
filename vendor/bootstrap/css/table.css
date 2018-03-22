@@ -6,14 +6,13 @@ table {
 }
 
 .table-cards {
-  border-collapse: inherit;
-  border-spacing: 0px 10px;
-  /* -webkit-border-horizontal-spacing: 0px;
-  -webkit-border-vertical-spacing: 10px; */
+  border-collapse: separate;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 10px;
   margin-bottom: -20px;
 }
 tr {
-  background-color: white ;
+  background-color: white !important;
   width: auto;
 }
 

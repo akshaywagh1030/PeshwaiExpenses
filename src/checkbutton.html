@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script >
+    $(document).ready(function(){
+    $("#hide").click(function(){
+        $("#exportto").hide();
+    });
+    $("#show").click(function(){
+        $("#exportto").show();
+    });
+    });
+    </script>
+    <style>
+      #exportto{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" id="exportto" value="Export To">
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+  </body>
+</html>

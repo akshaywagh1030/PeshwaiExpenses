@@ -10,19 +10,61 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="src/table.css">
+
+  <link rel="stylesheet" href="vendor/bootstrap/css/Site_Manual.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
 </head>
 <body>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav" style="background-color:red">
-    </div>
+<div class="sidepane production">
+  <div id="sidebar">
+    <div class="col-sm-2 sidenav">
+      <div>
+        <div class="user-image dropdown show">
+          <a  href="#" data-toggle="modal" data-target="#myModal2" id="profile_image">
+            <img src="bhupesh.jpg" alt="">
+          </a>
+                        </div>
+        <div class="user-Email-am">Bhupesh Patil</div>
+      </div>
+      <div class="Menu-am">
+        <ul id="menulnk" class="menulnk">
+          <li class="myactive "> <a  href="inbox.html" ><i class="fa fa-inbox myactive_icon"></i> &nbspInbox</a></li>
+          <li> <a  href="expenses.html"><i class="fa fa-clone icon-am"></i> &nbspExpenses</a></li>
+          <li > <a href="report.html" ><i class="fa fa-newspaper-o icon-am"></i> &nbspReport</a></li>
+        </ul>
+      </div>
 
-    <div class="col-sm-9">
-      <div class="row">
+ </div>
+    <div class="sidepane_logo">
+    </div>
+</div>
+    </div>
+    <!-- row 1 -->
+
+<div class="app-content-wrapper">
+  <div class="col-sm-10">
+    <div class="row">
+    <div id="sideNav_wrapper">
+        <div id="sideNav">
+
+        </div>
+    </div>
+    <div class="app-content">
+        <div id="content-wrapper" role="main">
+          <div class="page-header">
+              <div class="buttons_container floatRight">
+                  <div id="newReportButton" class="floatLeft"><div class="buttons_container"><div class="marginRight5"><button class="btn btn-success-outline js_reports_create" data-type="expense">New Report</button><button id="button_createReportSelect" class="btn btn-success-outline dropdown-toggle hidden"><span class="caret"></span></button></div></div></div>
+                  <button id="button_bulkButton" class="btn btn-primary-outline dropdown hidden">Bulk Actions</button>
+                  <button id="button_dewBulkButton" class="btn btn-primary-outline hidden">Bulk Approve</button>
+                  <button id="button_exportButton" class="btn btn-primary-outline dropdown hidden">Export to</button>
+                  <button class="btn btn-primary-outline hidden button_rebill">Rebill</button><button class="btn btn-success-outline hidden button_copy">Copy</button><button id="button_deleteReports" class="btn btn-danger-outline expensicons expensicons-trashcan hidden"></button>
+              </div>
+              <h1>Reports</h1>
+          </div>
+        </div>
         <div id="reportsContainer" class="tableContainer">
           <table class="table table-reports table-curved table-cards table-hover table-selectable table-sortable table-fixed table-textSmall table-textOverflowEllipsis table-clickable"data-toggle="table" data-sort-name="stargazers_count" data-sort-order="desc" id="reportsTable" cellspacing="0" cellpadding="0" border="0">
 
@@ -110,21 +152,21 @@
             </tbody>
           </table>
         </div>
-      </div>
-      <div id="reports_pagination_container_bottom" class="pagination-bar-bottom">
-          <div class="pagination-bar">
-              <div class="pagination-bar__pages">
-                  <label for="pages" class="js_label">Reports 1 to 1</label>
-                  <span class="btn-group">
-                      <button class="btn btn-secondary-outline fa fa-arrow-circle-left disabled js_previous"></button>
-                      <button class="btn btn-secondary-outline fa fa-arrow-circle-right disabled js_previous"></button>
-                  </span>
-              </div>
-          </div>
-      </div>
-      </div>
+        <div id="reports_pagination_container_bottom" class="pagination-bar-bottom">
+            <div class="pagination-bar">
+                <div class="pagination-bar__pages">
+                    <label for="pages" class="js_label">Reports 1 to 1</label>
+                    <span class="btn-group">
+                        <button class="btn btn-secondary-outline fa fa-arrow-circle-left disabled js_previous"></button>
+                        <button class="btn btn-secondary-outline fa fa-arrow-circle-right disabled js_previous"></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
     </div>
   </div>
+</div>
 </div>
 
 <footer class="container-fluid">

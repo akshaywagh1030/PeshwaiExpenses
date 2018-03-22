@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+
+  $(document).ready(function(){
+$('#fluency').change(function() {
+
+if(this.checked != true){
+    //$('input[name=name]').focus;
+    $( ".abc" ).css( "border", "3px solid red" );
+   $("#myname").focus();
+ }
+});
+});
+
+  </script>
+  <style>
+      #myname:focus{
+        background-color: yellow;
+      }
+  </style>
+</head>
+
+<body>
+
+    <label class="abc" for="name">Name:</label>
+    <input id="myname" name="name" /><br>
+    <label for="language">Do you speak English fluently?</label>
+  <input  name="fluency" type="checkbox"  id="fluency" checked />
+
+
+</body>
+
+</html>

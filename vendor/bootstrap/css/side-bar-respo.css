@@ -1,0 +1,33 @@
+.sidepane {
+    width: 230px;
+}
+@media (min-width: 900px)
+style.e3c2507b.css.gz:1
+.sidepane {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+    left: 0;
+}
+style.e3c2507b.css.gz:1
+.sidepane {
+    -webkit-box-shadow: 0 0 20px 0 transparent;
+    -moz-box-shadow: 0 0 20px 0 transparent;
+    box-shadow: 0 0 20px 0 transparent;
+    -webkit-transition: left,.25s ease,width,.25s ease;
+    -moz-transition: left,.25s ease,width,.25s ease;
+    -o-transition: left,.25s ease,width,.25s ease;
+    transition: left .25s ease,width .25s ease;
+    background: #5d6e73;
+    background-image: linear-gradient(90deg,#4f5e68 0,#39444b 100%);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: -230px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 230px;
+    z-index: 2100;
+}
