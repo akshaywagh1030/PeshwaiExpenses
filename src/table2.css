@@ -35,15 +35,15 @@ body{
   -ms-border-radius: 9px;
   -o-border-radius: 9px;
   border-radius: 9px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 10px;
-  height: 17px;
-  line-height: 1.4;
-  margin: 1px 110px 10px -10px;
-  position: relative;
-  top: -2px;
-  width: 66px;
+cursor: pointer;
+display: inline-block;
+font-size: 10px;
+height: 17px;
+line-height: 1.4;
+margin: 1px 110px 10px -86px;
+position: relative;
+top: 13px;
+width: 66px;
 }
 
 .impstar {
@@ -142,6 +142,21 @@ tr td:last-child, tr th:last-child {
     border-color: #acd0e5;
     color: #006894;
 }
-#button_exportButton:hover{
-  background-color: #008CBA;
+.avatar-pill__image{
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+    height: 28px;
+    width: 28px;
+    margin-left: 28px;
+
+}
+.pageExpenseImgs{
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  height: 61px;
+
 }

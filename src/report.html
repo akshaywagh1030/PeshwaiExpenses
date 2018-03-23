@@ -4,17 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <link rel="stylesheet" href="table.css">
   <script type="text/javascript" src="checkboxQuery.js"></script>
 </head>
 
 <body>
   <h1>live servers</h1>
+<!-- Button -->
+<div class="button-grp">
+  <button id="button_exportButton"  class="btn btn-exportButton dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export to</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Default CSV</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Create new CSV export layout...</a>
+  </div>
+</div>
+<!-- Button -->
+
+<!--  -->
+
+<!--  -->
+
   <div id="reportsContainer" class="table-responsive" >
     <table class="table table-reports table-curved table-cards table-hover table-selectable table-sortable table-fixed table-textSmall table-textOverflowEllipsis table-clickable"data-toggle="table" data-sort-name="stargazers_count" data-sort-order="desc" id="reportsTable" cellspacing="0" cellpadding="0" border="0">
 

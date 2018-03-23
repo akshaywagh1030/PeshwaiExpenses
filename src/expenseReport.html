@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="table2.css">
+  <script type="text/javascript" src="checkboxQuery.js"></script>
+</head>
+
+<body>
+  <h1>live servers</h1>
+  <!-- Button -->
+  <div class="button-grp">
+    <button id="button_exportButton" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export to</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Default CSV</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Create new CSV export layout...</a>
+    </div>
+  </div>
+  <!-- Button -->
+
+  <!--  -->
+
+  <!--  -->
+
+  <div id="reportsContainer" class="table-responsive">
+    <table class="table table-reports table-curved table-cards table-hover table-selectable table-sortable table-fixed table-textSmall table-textOverflowEllipsis table-clickable" data-toggle="table" data-sort-name="stargazers_count" data-sort-order="desc"
+      id="reportsTable" cellspacing="0" cellpadding="0" border="0">
+      <colgroup>
+        <col width="10">
+        <col width="20">
+        <col width="60">
+        <col width="15">
+        <col width="15">
+        <col width="50">
+        <col width="50">
+
+        <col width="50">
+
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="checkbox sorting_disabled"><input class="selectall_checkbox" type="checkbox" onclick="checkFluency()" id="checkboxAll"></th>
+          <th class="reportName js_table_sort width-25 px sorting" data-field="name" data-sortable="true">DATE</th>
+          <th class="cachedTotal js_table_sort width-50 px sorting" data-field="stargazers_count" data-sortable="true">MERCHANT</th>
+          <th class="policy js_table_sort width-70 px sorting_disabled">AMOUNT</th>
+          <th class="images__bill  sorting_disabled" type='images'>&nbsp;</th>
+          <th class="accountEmail js_table_sort sorting">POLICY</th>
+          <th class="managerEmail js_table_sort sorting">CATEGORY</th>
+          <th class="submitted js_table_sort sorting">COMMENT</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="oddhoverable" id="reportsTable_29394607">
+          <td class="checkbox"><input class="reportstable_checkbox" name="checkbox_1" type="checkbox"></td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow">Mar 16</div>
+          </td>
+          <td class="js_goToReport reportName">
+            <a class="d-inline-block mt-3" href="/report?reportID=29394607">Aniket Expenses</a>
+            <label class="filter-state smallState open">Open</label>
+          </td>
+
+          <td class="js_goToReport amount textRight">₹5,000.00
+            <div class="meta">
+              <div class="avatar-stack">
+                <div class="avatar-pill js_tooltip">
+                  <img class="avatar-pill__image" src="https://d1wpcgnaa73g0y.cloudfront.net/9193998a13c0351157b11e627caa59b868f438d2_128.jpeg" alt="Aniket J (aniketjondhale@gmail.com)">
+                  <span class="avatar-pill__name"></span></div>
+              </div>
+            </div>
+          </td>
+          <td class="js_goToReport pageExpenseImg"><img class="pageExpenseImgs" src="expensemissing.png"></td>
+          <td class="js_goToReport policy">
+            <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale">aniketjondhale</div>
+          </td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale@gmail.com">phone</div>
+          </td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow">Business Call</div>
+          </td>
+        </tr>
+
+
+        <tr class="evenhoverable" id="reportsTable_29332021">
+          <td class="checkbox"><input class="reportstable_checkbox" name="checkbox_1" type="checkbox"></td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow">Mar 17</div>
+          </td>
+
+          <td class="js_goToReport reportName"><a class="d-inline-block mt-3" href="/report?reportID=29394607">Akshay  Expenses</a>
+            <label class="filter-state smallState closed">Close</label></td>
+
+          <td class="js_goToReport amount textRight">₹3,000.00
+            <div class="meta">
+              <div class="avatar-stack">
+                <div class="avatar-pill js_tooltip">
+                  <img class="avatar-pill__image" src="https://d1wpcgnaa73g0y.cloudfront.net/9193998a13c0351157b11e627caa59b868f438d2_128.jpeg" alt="Aniket J (aniketjondhale@gmail.com)">
+                  <span class="avatar-pill__name"></span></div>
+              </div>
+            </div>
+          </td>
+          <td class="js_goToReport pageExpenseImg"><img class="pageExpenseImgs" src="expensemissing.png"></td>
+          <!-- <td class="js_goToReport starred"><img src='assets/images/expensemissing.png'></td> -->
+          <td class="js_goToReport policy">
+            <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale">aniketjondhale</div>
+          </td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="amitkakade115@gmail.com">meal</div>
+          </td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow">Night Food</div>
+          </td>
+        </tr>
+        <tr class="oddhoverable" id="reportsTable_29331719">
+          <td class="checkbox"><input class="reportstable_checkbox" name="checkbox_1" type="checkbox"></td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow">Mar 17</div>
+          </td>
+          <td class="js_goToReport reportName"><a class="d-inline-block mt-3" href="/report?reportID=29394607">Amit Expenses</a>
+            <label class="filter-state smallState closed">Close</label>
+          </td>
+          <<td class="js_goToReport amount textRight">₹2,000.00
+            <div class="meta">
+              <div class="avatar-stack">
+                <div class="avatar-pill js_tooltip">
+                  <img class="avatar-pill__image" src="https://d1wpcgnaa73g0y.cloudfront.net/9193998a13c0351157b11e627caa59b868f438d2_128.jpeg" alt="Aniket J (aniketjondhale@gmail.com)">
+                  <span class="avatar-pill__name"></span></div>
+              </div>
+            </div>
+            </td>
+            <td class="js_goToReport pageExpenseImg"><img class="pageExpenseImgs" src="expensemissing.png"></td>
+            <td class="js_goToReport policy">
+              <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale">aniketjondhale</div>
+            </td>
+            <td class="js_goToReport">
+              <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale@gmail.com">transportaion</div>
+            </td>
+            <td class="js_goToReport">
+              <div class="d-inline-block mt-3" class="textOverflow">Ola</div>
+            </td>
+        </tr>
+
+        <tr class="evenhoverable" id="reportsTable_29331658">
+          <td class="checkbox"><input class="reportstable_checkbox" name="checkbox_1" type="checkbox"></td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow">Mar 19</div>
+          </td>
+          <td class="js_goToReport reportName"><a class="d-inline-block mt-3" href="/report?reportID=29394607">Bhagyashri Expenses</a>
+            <label class="filter-state smallState open">Open</label>
+          </td>
+          <td class="js_goToReport amount textRight">₹1,000.00
+            <div class="meta">
+              <div class="avatar-stack">
+                <div class="avatar-pill js_tooltip">
+                  <img class="avatar-pill__image" src="https://d1wpcgnaa73g0y.cloudfront.net/9193998a13c0351157b11e627caa59b868f438d2_128.jpeg" alt="Aniket J (aniketjondhale@gmail.com)">
+                  <span class="avatar-pill__name"></span></div>
+              </div>
+            </div>
+          </td>
+          <td class="js_goToReport pageExpenseImg"><img class="pageExpenseImgs" src="expensemissing.png"></td>
+          <td class="js_goToReport policy">
+            <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale">aniketjondhale</div>
+          </td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow" data-toggle="tooltip" title="" data-original-title="aniketjondhale@gmail.com">travel</div>
+          </td>
+          <td class="js_goToReport">
+            <div class="d-inline-block mt-3" class="textOverflow">Uber</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div id="reports_pagination_container_bottom" class="pagination-bar-bottom">
+    <div class="pagination-bar">
+      <div class="pagination-bar__pages">
+        <label for="pages" class="js_label">Reports 1 to 1</label>
+        <span class="btn-group">
+                  <button class="btn btn-secondary-outline fa fa-arrow-circle-left disabled js_previous"></button>
+                  <button class="btn btn-secondary-outline fa fa-arrow-circle-right disabled js_previous"></button>
+              </span>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
