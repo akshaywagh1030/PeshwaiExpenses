@@ -1,22 +1,36 @@
 {
-  "name": "peshwaiexpense",
+  "title": "Sample Business Bootstrap Demo",
+  "name": "sample-business-bootstrap-demo",
   "version": "1.0.0",
-  "description": "expense report project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Demo template built with Bootstrap",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "homepage": "typeurl.ash",
+  "bugs": {
+    "url": "typeurl.ash",
+    "email": "feedback@typeurl.ash"
   },
+  "license": "MIT",
+  "author": "Bootstrap",
+  "contributors": [
+    "name (githubhandle)"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akshaywagh1030/PeshwaiExpense.git"
+    "url": "typeurl.ash"
   },
-  "author": "Bhagyashri",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/akshaywagh1030/PeshwaiExpense/issues"
-  },
-  "homepage": "https://github.com/akshaywagh1030/PeshwaiExpense#readme",
   "dependencies": {
+    "bootstrap": "4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "3.3.1"
+  },
+  "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1"
   }
