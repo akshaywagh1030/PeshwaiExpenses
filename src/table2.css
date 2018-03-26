@@ -17,9 +17,6 @@ tr {
   width: auto;
 }
 
-tr:hover td {
-  background-color: #d4f2fa;
-}
 
 body{
   background-color: #eee;
@@ -35,15 +32,14 @@ body{
   -ms-border-radius: 9px;
   -o-border-radius: 9px;
   border-radius: 9px;
-cursor: pointer;
-display: inline-block;
-font-size: 10px;
-height: 17px;
-line-height: 1.4;
-margin: 1px 110px 10px -86px;
-position: relative;
-top: 13px;
-width: 66px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 10px;
+  height: 17px;
+  line-height: 1.4;
+  top: 13px;
+  font-size: 13px;
+  width: 67px;
 }
 
 .impstar {
@@ -55,9 +51,7 @@ width: 66px;
   position: relative;
 }
 
-.table-reports tr td.reportName a {
-  color: #5d6e73;
-}
+
 .table thead th {
     /* background: rgba(238,238,238,.5); */
     border-bottom: 0px solid #ddd;
@@ -72,10 +66,6 @@ width: 66px;
 
 
 
-.filter-state.open {
-  background: #00a5d5;
-  color: #fff;
-}
 
 .filter-state.closed {
   background: #ccc;
@@ -153,10 +143,47 @@ tr td:last-child, tr th:last-child {
 
 }
 .pageExpenseImgs{
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  -ms-border-radius: 9px;
-  -o-border-radius: 9px;
-  height: 61px;
-
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  height: 80px;
+}
+.type-date{
+    margin-left: -6px;
+    color: #999;
+    font-size: small;
+}
+.type-money-expense
+{
+  color: #999;
+  font-size: 25px;
+}
+.table-reports tr td.reportName a
+{
+  color:black;
+  font-size: 16px;
+}
+.filter-state.open {
+  background: #00a5d5;
+  color: #fff;
+  /* margin-left: 6px;
+  display: flow-root; */
+}
+.reportID {
+      display: inline-block;
+      color: #999;
+}
+.meta .amount {
+    font-size: 22px;
+    font-weight: 300;
+    height: 30px;
+    vertical-align: top;
+}
+.meta .amount span {
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    top: 3px;
+    vertical-align: top;
 }
